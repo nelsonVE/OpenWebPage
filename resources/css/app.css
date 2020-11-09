@@ -1,0 +1,44 @@
+/*#define             COLOR_PRIMARY               "{20639B}"
+#define             COLOR_SECONDARY             "{173F5F}"
+#define             COLOR_SUCCESS               "{3CAEA3}"
+#define             COLOR_WARNING               "{F6D55C}"
+#define             COLOR_ERROR                 "{ED553B}"*/
+
+body{
+    background-color: #f1f1f1;
+}
+
+h3{
+    color: #20639B;
+}
+
+.bg-blue{
+    background-color: #20639B;
+}
+
+.bg-secondary{
+    background-color: #173F5F;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.navbar-blue {
+    background-color: white;
+    border-bottom: 3px solid #20639B;
+}
+
+.navbar-blue .navbar-brand,
+.navbar-blue .navbar-text {
+    color: rgb(44, 84, 152);
+}
+
+.navbar-blue .navbar-nav .nav-link {
+    color: rgba(44, 84, 152,.5);
+}
+
+.navbar-blue .nav-item.active .nav-link,
+.navbar-blue .nav-item:hover .nav-link {
+    color: #173F5F;
+}
