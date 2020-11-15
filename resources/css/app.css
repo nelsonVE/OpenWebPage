@@ -12,6 +12,10 @@ h3{
     color: #20639B;
 }
 
+.h4{
+    color: #20639B;
+}
+
 .bg-blue{
     background-color: #20639B;
 }
@@ -45,6 +49,14 @@ h3{
 
 .height-100{
     height: auto;
+}
+
+.text-darkgray{
+    color: #adadae;
+}
+
+.text-green{
+    color: #2dab4a;
 }
 
 .navbar-blue .navbar-brand,

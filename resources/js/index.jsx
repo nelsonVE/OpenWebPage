@@ -11,12 +11,13 @@ import Navigation from './components/Navigation';
 import Register from './components/Register';
 import Login from './components/Login';
 import Footer from './components/Footer';
+import Profile from './components/Profile';
 
 ReactDOM.render((
     <BrowserRouter>
         <Navigation/>
         <Route exact path='/' component={Home}></Route>
-        <Route exact path='/register' component={Register}></Route>
+        <Route exact path='/register' component={Profile}></Route>
         <Route exact path='/login' component={Login}></Route>
         <Footer/>
     </BrowserRouter>
