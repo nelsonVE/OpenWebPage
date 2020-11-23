@@ -1,12 +1,23 @@
-import React, {useState} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
+import {useHistory} from 'react-router-dom';
 
 import AuthService from '../../services/AuthService';
-import createResponse from '../../tools/ResponseTools';
+import {UserContext} from '../Routing';
+
 function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
+    const {state, dispatch} = useContext(UserContext);
+    const history = useHistory();
+
+    useEffect(() => {
+        console.log(state);
+        if(state){
+            history.push("/");
+        }
+    }, [])
 
     const onChangeUsername = (e) => {
         setUsername(e.target.value);
@@ -24,8 +35,10 @@ function Login() {
                 if(response.error){
                     setError(response.error.toString());
                 }
-                if(response.data){
+                if(response.user){
                     setSuccess("Te has logueado correctamente.");
+                    dispatch({type: "USER", payload: response.user});
+                    history.push("/");
                 }
             })
             .catch(error =>{

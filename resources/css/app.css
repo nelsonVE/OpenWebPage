@@ -69,8 +69,14 @@ h3{
 }
 
 .navbar-blue .nav-item.active .nav-link,
-.navbar-blue .nav-item:hover .nav-link {
+.navbar-blue .nav-item:hover .nav-link, .nav-link {
     color: #173F5F;
+}
+
+a.nav-link.active-menu{
+    background-color: rgba(44, 84, 152, .1);
+    border-bottom: 3px solid #173F5F;
+    color: #173F5F !important;
 }
 
 span .navbar-toggler-icon{
