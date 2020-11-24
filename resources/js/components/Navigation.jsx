@@ -21,7 +21,7 @@ function Navigation(){
         } else {
             return [
                 <li className="nav-item" key="login"><NavLink activeClassName="active-menu" className="nav-link" to="/login">Ingresar</NavLink></li>,
-                <li className="nav-item" key="register"><NavLink activeClassName="active-menu" className="btn nav-link btn-success text-white" to="/register" hidden>¡Regístrate!</NavLink></li>
+                <li className="nav-item ml-1" key="register"><NavLink activeClassName="active-menu" className="btn nav-link btn-success text-white" to="/register">¡Regístrate!</NavLink></li>
             ]
         }
     }
